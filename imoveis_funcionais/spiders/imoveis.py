@@ -7,8 +7,7 @@ class ImoveisSpider(scrapy.Spider):
     start_urls = ['http://www.transparencia.gov.br/imoveisFuncionais/listaPorImovel.asp?bogus=1&Pagina=%s' % page for page in range(1,150)]
 
 
-    def parse(self, response):
-        # Pega quantidade de páginas 
+    def parse(self, response): 
         tds = response.xpath('//*[@id="listagem"]/table/tr')
         for td in tds:
             endereco = td.xpath('.//td[contains(@class, "firstChild")]/text()').extract_first()
