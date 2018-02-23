@@ -11,11 +11,11 @@
     pip install -r requirements.txt
 
 ## Executando
-### Salvando as vagas em um JSON
+### Salvando os imóveis em um JSON
 
     scrapy crawl imoveis -o imoveis.json
     
-### Salvando as vagas no MongoDB Atlas
+### Salvando os imóveis no MongoDB Atlas
 #### Configurações MongoDB, editar o arquivo vagas/setting.py 
     # Descomente a linha: 'imoveis_funcionais.pipelines.MongoPipeline': 300,
     
