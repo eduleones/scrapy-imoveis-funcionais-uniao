@@ -3,8 +3,17 @@
 
 ## O que é necessário instalar?
 ### Python 3
+#### Windows
+##### Se você utiliza o sistema operacional windows, é  recomendado instalar o Python3 pelo [Anaconda](https://www.anaconda.com/download/) 
+
+#### Ubuntu Linux e derivados
+##### Necessário instalar as seguintes dependências:
+     sudo apt-get install build-essential python-dev python-pip libxml2-dev libxslt1-dev zlib1g-dev libffi-dev libssl-dev gcc
+     sudo apt-get install python3 python3-dev
      
-[Link de Instalação do Python3](https://www.python.org/downloads/release/python-364/)
+#### Fedora Linux e derivado
+     sudo yum install python3-devel gcc  # Fedora 26
+     sudo dnf install python3-devel gcc  # Fedora 27
   
 ### Bibliotecas a serem utilizadas:
 
